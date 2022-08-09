@@ -1,5 +1,6 @@
 import {
     useShopQuery,
+    useLocalization,
     CacheLong,
     gql,
     useUrl,
@@ -7,6 +8,8 @@ import {
     Seo,
   } from "@shopify/hydrogen";
   import { Suspense } from "react";
+
+  // import { Header } from "../components/sections/"
   
   /**
    * A server component that defines a structure and organization of a page that can be used in different parts of the Hydrogen app
@@ -53,7 +56,7 @@ import {
           </header>
   
           <main role="main" id="mainContent" className="flex-grow">
-            <Suspense>{children}</Suspense>
+            {children}
           </main>
         </div>
       </>
