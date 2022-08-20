@@ -1,5 +1,5 @@
-import {MediaFile} from '@shopify/hydrogen/client';
-import {ATTR_LOADING_EAGER} from '~/lib/const';
+import { MediaFile } from '@shopify/hydrogen/client';
+import { ATTR_LOADING_EAGER } from '~/lib/const';
 
 /**
  * A client component that defines a media gallery for hosting images, 3D models, and videos of products
