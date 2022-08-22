@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import {
     gql,
     useShopQuery,
@@ -7,10 +8,8 @@ import {
     Seo,
   } from "@shopify/hydrogen";
   
-  import { Layout } from "../../components/Layout.server";
-  import ProductCard from "../../components/ProductCard.server";
-  import { Suspense } from "react";
-  
+import { Layout, ProductCard } from "~/components";
+
   export default function Collection() {
     const { handle } = useRouteParams();
   

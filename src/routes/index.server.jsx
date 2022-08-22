@@ -13,7 +13,7 @@ import {
 import { MEDIA_FRAGMENT, PRODUCT_CARD_FRAGMENT } from "~/lib/fragments";
 // import FeaturedCollections from "../components/FeaturedCollections.server";
 import { HomepageContent } from "../components/HomePageContent.server";
-import { Layout } from "../components/Layout.server";
+import { Layout } from "~/components/index.server";
 
 export default function Home() {
   return (

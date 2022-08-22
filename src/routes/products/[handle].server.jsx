@@ -4,6 +4,7 @@ import {
     Seo,
     useShopQuery,
     useRouteParams,
+    useLocalization,
     useServerAnalytics,
     ProductOptionsProvider,
     ShopifyAnalyticsConstants
@@ -11,12 +12,15 @@ import {
 
 import { MEDIA_FRAGMENT } from "~/lib/fragments";
 import { getExcerpt } from "~/lib/utils";
-
-import { Layout } from "~/components/Layout.server";
-import { ProductGallery } from "~/components/product/ProductGallery.client";
-import { Heading, Text, Section, ProductForm } from "~/components";
-
-//   import ProductDetails from "../../components/ProductDetails.client";
+import { NotFound, Layout, ProductSwimlane } from "~/components/index.server";
+import {
+  Heading,
+  ProductDetail,
+  ProductForm,
+  ProductGallery,
+  Section,
+  Text,
+} from '~/components';
   
   export default function Product() {
     const { handle } = useRouteParams();
@@ -60,7 +64,7 @@ import { Heading, Text, Section, ProductForm } from "~/components";
                     <Text className={'opacity-50 font-medium'}>{vendor}</Text>
                   )}
                 </div>
-                {/* <ProductForm /> */}
+                <ProductForm />
               </section>
               </div>
             </div>
